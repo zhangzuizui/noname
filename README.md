@@ -48,11 +48,15 @@ statsmodels.tsa.stattools.adfuller()里，有一项参数为autolag,可供传递
 
 稳定性以一个非常严苛的标准定义，但是，对于特定的目的，如果序列有随时间不变的统计学属性，我们可以假设它具有稳定性。以下为三个判定时间序列稳定的基础标准：
 1. 序列的均值不能是时间的函数，换句话说序列的均值是一个常熟(该均值的含义具体参见rollingAverage)  
-![图2-1](https://www.analyticsvidhya.com/wp-
-content/uploads/2015/02/Mean_nonstationary.png)
+
+![图2-1](https://www.analyticsvidhya.com/wp-content/uploads/2015/02/Mean_nonstationary.png)
+
 2. 序列的方差不为时间的函数。
+
 ![图2-2](https://www.analyticsvidhya.com/wp-content/uploads/2015/02/Var_nonstationary.png)
+
 3. 不依赖于时间的自动协方差(不知道是啥意思？看一下[这里](https://en.wikipedia.org/wiki/Autocovariance))，即第i项和第(i+m)项的协方差不能是时间的函数(注意到下面右图的曲线，它的频率在随时间变化)。
+
 ![图2-3](https://www.analyticsvidhya.com/wp-content/uploads/2015/02/Cov_nonstationary.png)
 
 如果违反了以上三个标准，就需要让时间序列具有稳定性，然后尝试用随机模型来预测这个时间序列。使时间序列稳定的方法有很多，比如去趋势，差分化等。
