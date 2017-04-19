@@ -1,5 +1,5 @@
 # Time Series Analysis with Python
-本文通过各种搬运+总结形成。
+本文通过各种搬运+总结形成。如果看不了公式的话，也许你需要装一个[Github with MathJax](https://chrome.google.com/webstore/detail/github-with-mathjax/ioemnmodlmafdkllaclgeombjnmnbima/related),是一个chrome插件。
 ## Introduce
 总之最近需要做KDD2017和公司的一个项目，通过各种调查研究锁定了以前都没有涉及到的领域----时间序列分析。用它的理由大概就是这届KDD和公司那个项目的数据，都不是横截面数据，换句话说就是：它们**对于时间不独立，具有时间上的相关性**。所以不能作为一个常规的回归问题来解决，这个时候想要用曲线去拟合数据的话就只能上时间序列了。
 ## 1. 用pandas加载和处理时间序列
